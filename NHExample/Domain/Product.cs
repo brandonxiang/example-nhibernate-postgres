@@ -9,6 +9,7 @@ namespace NHExample.Domain
         public virtual string Name { get; set; }
         public virtual string Category { get; set; }
         public virtual int Price { get; set; }
+        public virtual GeoAPI.Geometries.IGeometry Geometry { get; set; }
 
     }
 }

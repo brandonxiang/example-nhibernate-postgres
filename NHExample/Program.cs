@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using NetTopologySuite.Geometries;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
@@ -28,7 +29,8 @@ namespace NHExample
                         {
                             Name = "Some C# Book",
                             Price = 500,
-                            Category = "Books"
+                            Category = "Books",
+                            Geometry = new Point(22,114)
                         };
 
             // And save it to the database

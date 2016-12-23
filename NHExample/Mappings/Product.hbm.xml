@@ -11,6 +11,7 @@
     <property name="Name" />
     <property name="Category" />
     <property name="Price" />
+    <property name="Geometry" column="the_geom" type="NHibernate.Spatial.Type.GeometryType, NHibernate.Spatial" />
   </class>
 
 </hibernate-mapping>
