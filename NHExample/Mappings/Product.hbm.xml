@@ -11,7 +11,12 @@
     <property name="Name" />
     <property name="Category" />
     <property name="Price" />
-    <property name="Geometry" column="the_geom" type="NHibernate.Spatial.Type.GeometryType, NHibernate.Spatial" />
+    <property name="Geometry" column="the_geom">
+      <type name="NHibernate.Spatial.Type.GeometryType, NHibernate.Spatial">
+        <param name="srid">4326</param>
+        <param name="subtype">POINT</param>
+      </type>
+    </property>
   </class>
 
 </hibernate-mapping>
