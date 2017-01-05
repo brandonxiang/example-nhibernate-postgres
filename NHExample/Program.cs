@@ -3,6 +3,7 @@ using System.Linq;
 using NetTopologySuite.Geometries;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernate.Spatial.Mapping;
 using NHibernate.Tool.hbm2ddl;
 
 namespace NHExample
@@ -15,7 +16,9 @@ namespace NHExample
             // Initialize NHibernate
             var cfg = new Configuration();
             cfg.Configure();
+            cfg.AddAuxiliaryDatabaseObject(new SpatialAuxiliaryDatabaseObject(cfg));
             cfg.AddAssembly(typeof(Domain.Product).Assembly);
+
 
             // Get ourselves an NHibernate Session
             var sessions = cfg.BuildSessionFactory();

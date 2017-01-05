@@ -1,20 +1,80 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHExample", "NHExample\NHExample.csproj", "{52606A66-7647-4D43-A594-C5310E4249D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Spatial", "libs\NHibernate.Spatial-master\NHibernate.Spatial\NHibernate.Spatial.csproj", "{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Spatial.PostGis", "libs\NHibernate.Spatial-master\NHibernate.Spatial.PostGis\NHibernate.Spatial.PostGis.csproj", "{0DD11B24-D42E-4345-A770-0CE755E17C82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{992BBC11-B86E-41AA-BE7A-F36678CA3A19}"
+	ProjectSection(SolutionItems) = preProject
+		libs\NHibernate.Spatial-master\.nuget\NuGet.Config = libs\NHibernate.Spatial-master\.nuget\NuGet.Config
+		libs\NHibernate.Spatial-master\.nuget\NuGet.exe = libs\NHibernate.Spatial-master\.nuget\NuGet.exe
+		libs\NHibernate.Spatial-master\.nuget\NuGet.targets = libs\NHibernate.Spatial-master\.nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE42DD50-8C75-4859-87BA-39D6D263A210}"
+	ProjectSection(SolutionItems) = preProject
+		libs\NHibernate.Spatial-master\SharedAssemblyInfo.cs = libs\NHibernate.Spatial-master\SharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items (2)", "Solution Items (2)", "{593DCEA7-C933-46F3-939F-D8172399AB05}"
+	ProjectSection(SolutionItems) = preProject
+		libs\nhibernate-core-master\default.build = libs\nhibernate-core-master\default.build
+		libs\nhibernate-core-master\releasenotes.txt = libs\nhibernate-core-master\releasenotes.txt
+		libs\nhibernate-core-master\teamcity.build = libs\nhibernate-core-master\teamcity.build
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate", "libs\nhibernate-core-master\src\NHibernate\NHibernate.csproj", "{5909BFE7-93CF-4E5F-BE22-6293368AF01D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52606A66-7647-4D43-A594-C5310E4249D8}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{52606A66-7647-4D43-A594-C5310E4249D8}.Debug|x86.ActiveCfg = Debug|x86
 		{52606A66-7647-4D43-A594-C5310E4249D8}.Debug|x86.Build.0 = Debug|x86
+		{52606A66-7647-4D43-A594-C5310E4249D8}.Release|Any CPU.ActiveCfg = Release|x86
 		{52606A66-7647-4D43-A594-C5310E4249D8}.Release|x86.ActiveCfg = Release|x86
 		{52606A66-7647-4D43-A594-C5310E4249D8}.Release|x86.Build.0 = Release|x86
+		{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}.Debug|x86.Build.0 = Debug|Any CPU
+		{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}.Release|x86.ActiveCfg = Release|Any CPU
+		{50868B60-AC38-47E1-BD09-B4A4AA06B6F2}.Release|x86.Build.0 = Release|Any CPU
+		{0DD11B24-D42E-4345-A770-0CE755E17C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD11B24-D42E-4345-A770-0CE755E17C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD11B24-D42E-4345-A770-0CE755E17C82}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0DD11B24-D42E-4345-A770-0CE755E17C82}.Debug|x86.Build.0 = Debug|Any CPU
+		{0DD11B24-D42E-4345-A770-0CE755E17C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD11B24-D42E-4345-A770-0CE755E17C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD11B24-D42E-4345-A770-0CE755E17C82}.Release|x86.ActiveCfg = Release|Any CPU
+		{0DD11B24-D42E-4345-A770-0CE755E17C82}.Release|x86.Build.0 = Release|Any CPU
+		{5909BFE7-93CF-4E5F-BE22-6293368AF01D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5909BFE7-93CF-4E5F-BE22-6293368AF01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5909BFE7-93CF-4E5F-BE22-6293368AF01D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5909BFE7-93CF-4E5F-BE22-6293368AF01D}.Debug|x86.Build.0 = Debug|Any CPU
+		{5909BFE7-93CF-4E5F-BE22-6293368AF01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5909BFE7-93CF-4E5F-BE22-6293368AF01D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5909BFE7-93CF-4E5F-BE22-6293368AF01D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5909BFE7-93CF-4E5F-BE22-6293368AF01D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TextTemplating) = postSolution
+		TextTemplating = 1
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = NHibernate.vsmdi
 	EndGlobalSection
 EndGlobal
